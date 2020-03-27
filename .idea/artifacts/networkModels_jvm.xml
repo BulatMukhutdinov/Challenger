@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="networkModels-jvm">
+    <output-path>$PROJECT_DIR$/networkModels/build/libs</output-path>
+    <root id="archive" name="networkModels-jvm.jar">
+      <element id="module-output" name="networkModels_jvmMain" />
+    </root>
+  </artifact>
+</component>

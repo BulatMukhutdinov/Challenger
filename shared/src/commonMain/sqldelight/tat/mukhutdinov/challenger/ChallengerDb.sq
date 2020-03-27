@@ -1,0 +1,20 @@
+CREATE TABLE Kitty (
+  breed TEXT NOT NULL PRIMARY KEY,
+  description TEXT NOT NULL,
+  icon TEXT NOT NULL,
+  thumb TEXT NOT NULL,
+  about TEXT NOT NULL
+);
+
+CREATE INDEX kitty_breed ON Kitty(breed);
+
+selectAll:
+SELECT *
+FROM Kitty;
+
+insert:
+INSERT INTO Kitty(breed, description, icon, thumb, about)
+VALUES ?;
+
+clear:
+DELETE FROM Kitty;

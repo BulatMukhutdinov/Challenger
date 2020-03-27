@@ -1,0 +1,3 @@
+rootProject.name = 'Challenger'
+include ':app', ':shared', ':backend', ':networkModels'
+enableFeaturePreview('GRADLE_METADATA')

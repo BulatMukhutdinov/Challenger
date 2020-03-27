@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    app:startDestination="@id/auth">
+
+    <fragment
+        android:id="@+id/auth"
+        android:name="tat.mukhutdinov.challenger.auth.AuthViewModel"
+        android:label="Auth"
+        tools:layout="@layout/auth">
+
+        <action
+            android:id="@+id/to_home"
+            app:destination="@id/home"
+            app:popUpTo="@id/root" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home"
+        android:name="tat.mukhutdinov.challenger.home.HomeViewModel"
+        android:label="Home"
+        tools:layout="@layout/home" />
+
+</navigation>
